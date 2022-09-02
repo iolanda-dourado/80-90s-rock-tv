@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background: black;
+}
+
+ body {
+    background: black url('../imagens/fundo2.jpg') no-repeat center left;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+
+ main {
+    position: relative;
+ }
+
+ section#tv {
+    background: url('../imagens/teve.png');
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    height: 375px;
+    width: 500px;
+    transform: translate(-50%, 50%);
+    background-repeat: no-repeat;
+ }
+
+ section#bandas {
+    text-align: center;
+ }
+
+ section#bandas img {
+    margin-top: 20px;
+    width: 70px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px black;
+    box-sizing: border-box;
+ }
+
+ section#bandas img:hover {
+   border: 2px solid rgba(255, 255, 255, 0.521);
+   transform: translate(-4px, -4px);
+    transition: transform 0.5s;
+
+ }
+
+ iframe#tela {
+   position: relative;
+   top: 60px;
+   left: 62px;
+   height: 236px;
+   width: 317px;
+   border-radius: 8px;
+ }
